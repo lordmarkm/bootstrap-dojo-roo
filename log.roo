@@ -1,0 +1,32 @@
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log opened at 2017-01-01 22:14:04
+project setup --topLevelPackage com.bootstrapdojo
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+entity jpa --class ~.domain.Tshirt
+field string --fieldName color --notNull 
+field number --fieldName price --type java.math.BigDecimal
+quit
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log closed at 2017-01-01 22:29:12
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log opened at 2017-01-01 22:29:18
+focus --class ~.domain.Tshirt
+help repository jpa
+repository jpa --all
+service --all
+web mvc setup 
+web mvc view setup --type THYMELEAF 
+web mvc controller --all --responseType THYMELEAF 
+web mvc controller --all --pathPrefix /api
+quit
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log closed at 2017-01-01 22:38:56
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log opened at 2017-01-08 08:12:37
+backup
+quit
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log closed at 2017-01-08 08:18:34
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log opened at 2017-01-08 08:22:55
+focus --class ~.domain.Tshirt
+web mvc controller --all --pathPrefix /api
+quit
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log closed at 2017-01-08 08:23:50
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log opened at 2017-01-14 14:38:16
+hint
+quit
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log closed at 2017-01-14 14:38:53
